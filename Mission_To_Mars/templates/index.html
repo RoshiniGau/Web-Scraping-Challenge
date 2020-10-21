@@ -32,29 +32,29 @@
     </div>
 </div>
 
-<!-- New section divided into two columns -->
-<div class="row">
-
-<!-- Left Side -->
-<!-- Row for Featured Mars Image -->  
+<!-- Next div is a row, divided into two sections-->
+<div class="row" margin-top:25px;"">
+  <!-- First section is for the featured Mars Image -->
   <div class="col-md-8">
-    <h3><b>Featured Mars Image</b></h3>
-    <img src={{mars_data.featured_image_url}} height=auto width=750px>
+    <h2>Featured Mars Image</h2>
+    <img src="{{mars_data.featured_image_url}}" height=auto width=750px class="img-responsive">
   </div>
-    <!-- Row for Mars Facts HTML data -->
+  
+  <!-- Current Mars Weather and Facts -->
+  <div class="col-md-3">
+    <!-- Mars Weather Tweet Row -->
     <div class="row">
       <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-body">
             <h4><b>Mars Facts</b></h4>
-            <p>{{mars_data.mars_facts | safe}}</p>
+        {{mars_data.mars_facts | safe}}
           </div>
         </div>
       </div>
-    </div>       
+    </div>
   </div>
 </div>
-
 <!-- New Section is divided into a 2x2 panel for Hemisphere Images -->
 <div class="row" style="margin-top:80px;">
   <div class="page-header">
